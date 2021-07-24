@@ -1,0 +1,193 @@
+/*Importar fuentes Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/*-----ESTILOS GENERALES-----*/
+:root{
+    --color-beige: #fffdf1;
+    --color-mostaza: #e9c835;
+    --color-mostaza-oscuro: #b48e24;
+    --color-negro-pie: rgb(40, 40, 40);
+}
+html{scroll-behavior: smooth;}
+h1,h2,p,a,ol{font-family: 'Open Sans', sans-serif;}
+h1{font-size: 38px; text-align: center;}
+h2{font-size: 30px;}
+h3{font-family: 'Oswald', sans-serif; font-size: 26px; text-align: center;}
+p{font-size: 18px;}
+strong{color: #151e2f;}
+
+/*-----ENCABEZADO - MENÚ-----*/
+header{
+    background-image: url(../img/encabezado.jpg); width: 100%;
+    background-size: 100% 180px; background-repeat: no-repeat; 
+    display: flex; justify-content: space-evenly; 
+}
+header #logo_encabezado{
+    width: 220px; height: 180px;
+}
+.menu ul{
+    display: flex; width: 100%; height: 60px; 
+    list-style: none; margin-top: 65px; 
+}
+.menu ul li a{
+    text-decoration: none; position: relative; font-size: 18px; 
+    color: #fff; float: left; margin: 15px 25px;
+    text-transform: uppercase; font-weight: bold; 
+}
+.menu ul li a::after{
+    content: ''; transition: 250ms ease-out;
+    width: 0%; height: 3px; opacity: 0;
+    background-color: var(--color-mostaza);
+    position: absolute; bottom: -5px; left: 0;
+}
+.menu ul li a:hover::after{
+    width: 100%; opacity: 1;
+}
+
+/*Ocultar elementos del menú para diseño adaptable*/
+#btn_menu, #menu2{display: none;}
+
+/*-----BANNER INTRODUCTORIO - "HERO"-----*/
+#banner_intro{
+    background-image: url(../img/wave.png);
+    background-size: 100% 600px; 
+    background-repeat: no-repeat; 
+    position: relative; top: -100px; 
+    padding-top: 210px; z-index: -1;
+}
+
+/*-----CONTENEDOR PRINCIPAL-----*/
+main{
+    width: 70%; height: 100%; margin-top: 160px; 
+    margin-left: 50%; transform: translateX(-50%); 
+    background-color: #fff; box-shadow: 0 0 5px 2px #a5a5a5;
+}
+
+/*Título del blog - Compartir en redes sociales*/
+#titulo_principal, #compartir_redes{
+    padding: 20px 30px;
+    background-image: url(../img/fondo-beige.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
+}
+#autor,#autor2{
+    width: 110px; height: 110px; 
+    border-radius: 50%; box-shadow: 0px 0px 5px 3px #afafaf;
+}
+.info_autor{
+    width: 80%; height: 110px; 
+    margin-left: 140px; margin-top: -135px;
+}
+.nombre_autor{font-size: 35px; margin-bottom: -10px;}
+.fecha{color: #656565; font-size: 16px;}
+
+/*Descripción Introductoria*/
+#descripcion{padding: 20px 30px;}
+
+/*Menú de Anclaje - Contenidos del Blog*/
+#contenidos{
+    width: 60%; height: 100%;
+    padding: 5px; margin: 0 auto;
+    background-color: var(--color-beige);
+    border: 1px solid var(--color-mostaza);
+} 
+#contenidos p{font-size: 18px; text-align: center; font-weight: bold;}
+#contenidos ol li a{
+    color: #000; text-decoration: none; 
+    font-size: 18px; margin: 5px 0; display: block;
+}
+
+/*Resumenes del Blog*/
+#cont_resumen article{display: flex; margin: 15px 0;}
+#cont_escrito{padding: 0 15px;}
+#cont_resumen article img{
+    width: 30%; height: 210px; 
+    border-radius: 50px; padding: 0 15px;
+}
+
+/*Acomodo de imagenes en el centro de los textos*/
+#img1{margin-top: 55px;}
+#img2, #img4{margin-top: 70px;}
+#img3{margin-top: 80px;}
+#img5{margin-top: 110px;}
+#img6{margin-top: 85px;}
+#img7{margin-top: 40px;}
+#img8{margin-top: 40px;}
+
+/*-----GALERÍA DE IMAGENES-----*/
+#slider_contenedor{
+    width: 100%; margin-bottom: 1%;
+}
+.item_slider{
+    position: relative;
+}
+.item_slider img{
+    width: 100%; height: 100%;
+}
+#numero,#texto{
+    position: absolute;
+}
+
+/*Estilos para número de imagen y el texto descriptivo*/
+#numero,#texto{
+    background-color: rgba(10, 10, 10, 0.8); color: #fff; 
+    text-align: center; font-size: 16px; font-family: 'Open Sans', sans-serif;
+}
+
+/*Acomodo de contenidos dentro de la imagen del carrusel*/
+#numero{
+    top: 0px; left: 0px; padding: 10px 20px;
+}
+#texto{
+    width: 60%; padding: 10px 0;
+    bottom: 4px; left: 50%; 
+    transform: translateX(-50%);
+}
+
+/*Compartir en redes sociales*/
+.cont_redes{
+    width: 300px; padding: 10px 0;
+    display: flex; justify-content: space-evenly; 
+    margin-left: 50%; transform: translateX(-50%);
+}
+.cont_redes a{
+    text-decoration: none; color: var(--color-mostaza-oscuro);
+}
+
+/*FINAL - Fotografía y Nombre de Autor*/
+#autor_final{
+    padding-top: 15px; padding-bottom: 30px;
+}
+.desc_autor{
+   color: #656565; 
+   font-size: 16px; 
+}
+#autor2{margin-left: 10px; margin-top: 10px;}
+
+/*-----PIE DE PÁGINA-----*/
+footer{
+    width: 100%; height: 230px; 
+    background-color: var(--color-negro-pie);
+    color: var(--color-mostaza); padding-top: 15px;
+}
+footer p{text-align: center;}
+footer img{
+    position: absolute; left: 50%; 
+    transform: translateX(-50%);
+    height: 160px; width: 220px;
+}
+
+/*-----ANCLA VOLVER AL INICIO-----*/
+#regresar{
+    background-color: #151e2f; padding: 10px; border-radius: 20px;
+    position: fixed; right: 40px; bottom: 30px; line-height: 30px;
+    display: flex; flex-flow: column; text-decoration: none; 
+    text-align: center; color: var(--color-mostaza); 
+    opacity: 0; visibility: hidden; transition: 300ms; 
+}
+
+/*EFECTO FOCUS EN VÍNCULOS*/
+a:focus{
+    border: 1px solid var(--color-mostaza); outline: none;
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Metadatos para SEO-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=none">
+    <meta name="author" content="Elmer Vargas Salazar">
+    <meta name="description" content="Elmer's Blog es el sitio donde su autor Elmer Vargas Salazar relata toda su experiencia de estudio y conocimiento en el curso de desarrollo web, impartido por el Instituto Nacional de Aprendizaje (INA) de Costa Rica">
+    <meta name="keywords" content="curso de desarrollo web, desarrollo web, instituto nacional de aprendizaje, ina, costa rica, planificación web, maquetación web, html, css, lógica computacional, javascript, accesibilidad web, verificación web, publicación web">
+
+    <!--Meta de Robots-->
+    <meta name="robots" content="index,follow" />
+
+    <!--Metadatos - Open Graph-->
+    <meta property="og:title" content="Todo lo aprendido en Desarrollo Web del INA - Costa Rica"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://elmervargas31.github.io/elmers-blog/"/>
+    <meta property="og:image" content="img/carrusel1.jpg"/>
+
+    <!--Título de Pestaña-->
+    <title>Elmer's Blog</title>
+    <!--Ícono de Pestaña-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+     <!--Hojas de estilo CSS-->
+     <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/estilos.css">
+     <link rel="stylesheet" href="css/responsive.css">
+
+     <!--Íconos Vectoriales - Font Awesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="principio">
+    <!--Encabezado y Menú-->
+    <header role="banner">
+        <!--Logo del Sitio-->
+        <a href="index.html" role="link">
+            <img src="img/logo.png" alt="Logotipo del sitio Elmer's Blog" id="logo_encabezado">
+        </a>
+        <!--Navegación - Escritorio-->
+        <nav class="menu" role="navigation">
+            <ul role="list">
+                <li role="listitem"><a href="#titulo_principal" role="link">Sobre Elmer</a></li>
+                <li role="listitem"><a href="#planificacion" role="link">Blog</a></li>
+                <li role="listitem"><a href="#slider_contenedor" role="link">Galería</a></li>
+                <li role="listitem"><a href="#compartir_redes" role="link">Compartir artículo</a></li>
+            </ul>
+        </nav>
+
+        <!--Barras Botón Menú-->
+        <button id="btn_menu" role="button">
+            <i class="fas fa-bars fa-2x"></i>
+            <p>Menú</p> 
+        </button>
+        <!--Navegación - Móvil-->
+        <nav id="menu2" role="navigation">
+            <ul role="list">
+                <li role="listitem"><a href="#titulo_principal" role="link">Sobre Elmer</a></li>
+                <li role="listitem"><a href="#planificacion" role="link">Blog</a></li>
+                <li role="listitem"><a href="#slider_contenedor" role="link">Galería</a></li>
+                <li role="listitem"><a href="#compartir_redes" role="link">Compartir artículo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Imagen Introductoria Grande - Se ajusta con CSS-->
+    <section id="banner_intro">
+        <!--Contenedor Principal - Main-->
+        <main role="main">
+            <!--Título principal del blog e información del autor y fecha-->
+            <section id="titulo_principal">
+                <h1>Todo lo que aprendí en el programa Desarrollo Web del INA - Costa Rica</h1>
+                <img src="img/autor.jpg" alt="Fotografía de Elmer Vargas, autor del blog" id="autor">
+                <div class="info_autor">
+                    <p class="nombre_autor">Elmer Vargas</p>
+                    <p class="fecha">22 de julio, 2021</p>
+                </div>
+            </section>
+
+            <!--Descripción Introductoria del Autor-->
+            <section id="descripcion">
+                <article>
+                    <p>Soy técnico egresado del curso <strong>Desarrollo Web</strong>, en el cual su etapa de estudio comenzó desde el 24 de junio del 2019, y se extendió hasta el 03 de junio del presente 2021. Esta capacitación la impartió el <strong>Instituto Nacional de Aprendizaje</strong>, institución pública de Costa Rica fundada en el año 1965.</p>
+                    <p>Las enseñanzas que compartió el personal docente fueron muy relevantes para mi superación personal estudiantil, y también estoy muy convencido que para el entorno laboral real del Desarrollo Web, estas bases más mi conocimiento que adquiero a través de la práctica y de ser autodidáctico, lograrán beneficiar a numerosas cantidades de usuarios clientes a partir de la elaboración de sitios web de calidad trascendente.</p>
+                </article>
+            </section>
+
+            <!--Lista de Contenidos - Anclajes del Blog-->
+            <section id="contenidos">
+                <p>Contenidos:</p>
+                <ol role="list">
+                    <li role="listitem"><a href="#planificacion" role="link">Planificación Web</a></li> 
+                    <li role="listitem"><a href="#maquetacion" role="link">Maquetación Web</a></li>
+                    <li role="listitem"><a href="#html" role="link">HTML</a></li>
+                    <li role="listitem"><a href="#css" role="link">CSS</a></li>
+                    <li role="listitem"><a href="#logica" role="link">Lógica Computacional</a></li>
+                    <li role="listitem"><a href="#javascript" role="link">JavaScript</a></li>
+                    <li role="listitem"><a href="#accesibilidad" role="link">Accesibilidad Web</a></li>
+                    <li role="listitem"><a href="#verificacion" role="link">Verificación Web</a></li>
+                    <li role="listitem"><a href="#publicacion" role="link">Publicación Web</a></li>
+                </ol>
+            </section>
+
+            <!--Contenedor para los Resúmenes-->
+            <section id="cont_resumen">
+                <article id="planificacion">
+                    <div id="cont_escrito">
+                        <!--Resumen 1-->
+                        <h2>1) Planificación Web:</h2>
+                        <p>Recuerdo cuando inicié esta aventura el 24 de junio del 2019, y este fue el primer módulo. En esta fase conocimos la información básica sobre cuales etapas conformaban un ciclo de vida de desarrollo de un proyecto de software.</p>
+                        <p>También realizabamos diagramaciones correspondientes a tareas, donde algún procedimiento contaba con antecedentes, precedentes y ruta crítica. En esta área de tareas conocimos una herramienta en línea llamada <strong>Trello</strong> para organizar quehaceres de algún proyecto.</p>
+                    </div> 
+
+                    <!--Imagen Representativa-->
+                    <img src="img/planificacion.jpg" id="img1" alt="Ilustración del curso Planificación Web">
+                </article><!--Fin Resumen 1-->
+
+                <article id="maquetacion"> 
+                    <div id="cont_escrito">
+                        <!--Resumen 2-->
+                        <h2>2) Maquetación Web:</h2>
+                        <p>Por este lado, dimos paso a la utilización de herramientas que son altamente familiares para trabajadores de Diseño Gráfico, tales como: <strong>Pencil</strong>, <strong>Adobe Photoshop</strong>, <strong>Adobe Illustrator</strong>. Con ellas realizabamos o duplicabamos bocetajes de páginas web reales, o desde nuestra creatividad propia.</p>
+                        <p>La principal premisa que permanecerá en mi mente sobre esta fase es la de siempre comenzar a diseñar bocetajes de nuestro futuro producto final que será el sitio web, ya que son los requerimientos que presenta la página y tal cuales un cliente nos puede solicitar.</p>   
+                    </div>    
+                    
+                    <!--Imagen Representativa-->
+                    <img src="img/maquetacion.png" id="img2" alt="Ilustración del curso Maquetación Web">   
+                </article><!--Fin Resumen 2-->
+                
+                <article id="html">
+                    <div id="cont_escrito">
+                         <!--Resumen 3-->
+                        <h2>3) HTML:</h2>
+                        <p>Por primera vez en mi vida, contaba con 19 años cuando toque la primer línea de código de HTML. Nunca antes había conocido nada sobre informática o programación, pero hacer ese inicial HTML fue bastante motivador.</p>
+                        <p>Claro está, en esta subárea me sumergí en toda la sintaxis que implica el lenguaje de marcado, desde simples títulos, párrafos, enlaces, listas, tablas hasta crear figuras vectoriales SVG.</p>
+                        <p>En lo personal este lenguaje no me era lo suficientemente costoso, y recuerdo siempre ayudaba a algunos de mis compañeros cuando se les dificultaba alguna temática o la realización específica de una parte del código.</p>
+                    </div>
+
+                    <!--Imagen Representativa-->
+                    <img src="img/html.jpg" id="img3" alt="Ilustración del curso HTML">
+                </article><!--Fin Resumen 3-->
+
+                <article id="css">
+                    <div id="cont_escrito">
+                        <!--Resumen 4-->
+                        <h2>4) CSS:</h2>
+                        <p>Acá avivábamos todo lo que era contenido escrito de marcado HTML en hermosos colores, formas, tamaños, ubicaciones, animaciones para ciertos componentes de una página web.</p>
+                        <p>Otro fundamento de suma relevancia fue conocer sobre el diseño adaptable para dispositivos móviles, me abrió la perspectiva de comenzar a formular nuestros sitios de forma más accesible para usuarios que no dependen de solo una computadora para navegar en estos servicios, sino de teléfonos inteligentes y tabletas.</p>
+                    </div>           
+                    
+                    <!--Imagen Representativa-->
+                    <img src="img/css.jpg" id="img4" alt="Ilustración del curso CSS">
+                </article><!--Fin Resumen 4-->
+
+                <article id="logica">
+                    <div id="cont_escrito">
+                        <!--Resumen 5-->
+                        <h2>5) Lógica Computacional:</h2>
+                        <p>Este curso me hizo comprender que antes de querer manejar un lenguaje de programación, en nuestro caso JavaScript, se debe poner en práctica nuestra habilidad de lógica y saber razonar en distintos problemas.</p>
+                        <p>En sus inicios esto fue algo costoso para mí, ya que siempre me consideraba alguien no tan listo para estas cosas. Pero no me dejé llevar más por esta absurda excusa, y practicaba de los errores o me reunía con otros compañeros que comprendían más rápido los contenidos.</p>
+                        <p>Lógica trataba principalmente de diseñar diagramas de flujo y pseudocódigos a distintos problemas que el profesor nos asignaba resolver. Nos adentramos en definiciones claves de programación: variables, condicionales, ciclos, arreglos, matrices, funciones...</p>
+                    </div>
+
+                    <!--Imagen Representativa-->
+                    <img src="img/logica.jpg" id="img5" alt="Ilustración del curso Lógica Computacional">
+                </article><!--Fin Resumen 5-->
+
+                <article id="javascript">
+                    <div id="cont_escrito">
+                        <!--Resumen 6-->
+                        <h2>6) JavaScript:</h2>
+                        <p>Fue algo también recargado de emociones manejar este primer lenguaje de programación, el cual es por excelencia del desarrollo web frontend (de la interfaz del usuario).</p>
+                        <p>El concepto acá fue continuar con las premisas vistas en Lógica Computacional, diseñar juegos y pequeñas aplicaciones para conocer más mecanismos sobre JavaScript. En resúmen, siempre el aprendizaje tenía que llevarse bien con la práctica constante.</p>
+                        <p>Luego enfatizamos un poco en librerías y frameworks populares como: <strong>JQuery</strong>, <strong>Node.js</strong>...</p>
+                    </div>      
+
+                    <!--Imagen Representativa-->
+                    <img src="img/javascript.jpg" id="img6" alt="Ilustración del curso JavaScript">
+                </article><!--Fin Resumen 6-->
+           
+                <article id="accesibilidad">
+                    <div id="cont_escrito">
+                        <!--Resumen 7-->
+                        <h2>7) Accesibilidad Web:</h2>
+                        <p>Un módulo que amplió mi expectativa sobre como desarrollar un producto web que logre beneficiar a la mayor cantidad de poblaciones posibles. Conocí que también usuarios con capacidades reducidas de movimiento, visión, audición y también los que enfrenten condiciones relacionadas con el ambiente que los rodea son participes de utilizar los medios digitales.</p>
+                        <p>Pude desarrollar elementos que en módulos pasados venía arrastrando en el camino, como un panel de accesibilidad en donde en una página se podia aumentar y reducir el tamaño de la letra a 2 niveles, o aplicar filtros de color en blanco y negro o invertidos.</p>
+                    </div>
+                    
+                    <!--Imagen Representativa-->
+                    <img src="img/accesibilidad.jpg" id="img7" alt="Ilustración del curso Accesibilidad Web">
+                </article><!--Fin Resumen 7-->
+            
+                <article id="verificacion">
+                    <div id="cont_escrito">
+                        <!--Resumen 8-->
+                        <h2>8) Verificación Web:</h2>
+                        <p>Rama que consistió en generar pruebas de software y detectar cuales eran ciertos requerimientos que contaban o no los diseños de páginas web reales.</p>
+                    </div>      
+
+                    <!--Imagen Representativa-->
+                    <img src="img/verificacion.jpg" alt="Ilustración del curso Verificación Web">
+                </article><!--Fin Resumen 8-->
+  
+                <article id="publicacion">
+                    <div id="cont_escrito">
+                        <!--Resumen 9-->
+                        <h2>9) Publicación Web:</h2>
+                        <p>Con bastante orgullo de mi esfuerzo, este fue el último módulo de todo el curso, y acá conocí nuevos conceptos como alojamientos web, dominios, como transferir nuestros sitios a un servicio de alojamiento mediante el protocolo FTP y aspectos de cuidado para lograr beneficiar a nuestros productos en línea con el SEO.</p>
+                        <p>Agradezco al personal docente por toda la importante labor que desempeñó, y por hacer de mí una persona que antes no conocía sobre programación e informática, en alguien totalmente analítico y competente hacia el futuro.</p>
+                    </div>
+                    
+                    <!--Imagen Representativa-->
+                    <img src="img/publicacion.jpg" id="img8" alt="Ilustración del curso Publicación Web">
+                </article><!--Fin Resumen 9-->
+
+            </section><!--Fin Contenedor para los Resumenes-->
+
+            <!--Contenedor del Carrusel-->
+            <div id="slider_contenedor">
+                <!--Elementos Individuales del Carrusel-->
+                <div class="item_slider">
+                    <!--Número de Imagen-->
+                    <span id="numero"></span>
+                    <!--Fotografía-->
+                    <img id="fotografia">
+                    <!--Aclaración Descriptiva-->
+                    <span id="texto"></span>
+                </div>          
+            </div><!--Fin contenedor del carrusel-->
+
+            <!--Área para compartir el artículo en redes sociales-->
+            <section id="compartir_redes">
+                <h3>¿Le ha gustado?, ¡Compartí esta información!</h3>
+                <div class="cont_redes">
+                    <a href="https://facebook.com/login/" role="link" target="_blank">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                        Facebook
+                    </a>
+                    
+                    <a href="https://web.whatsapp.com/" role="link" target="_blank">
+                        <i class="fab fa-whatsapp-square fa-2x"></i>
+                        WhatsApp
+                    </a>
+                </div>
+            </section>
+
+            <!--Sección final con fotografía y nombre del autor-->
+            <section id="autor_final">
+                <img src="img/autor.jpg" alt="Fotografía de Elmer Vargas, autor del blog" id="autor2">
+                <div class="info_autor">
+                    <p class="nombre_autor">Elmer Vargas</p>
+                    <p class="desc_autor">Individuo quien fuera del rol de desarrollador ama la música, especialmente clásica y en inglés. Le encanta tocar instrumentos musicales y salir a caminar o correr. Comer es su enorme placer. Su fuerte es el aprendizaje de idiomas.</p>
+                </div>
+            </section>
+        </main><!--Fin Contenedor Principal - Main-->
+    </section><!--Fin Imagen Introductoria Grande-->
+
+    <!--Pie de Página-->
+    <footer role="contentinfo">
+        <p>Elmer's Blog - Todos los Derechos Reservados - ©2021</p>
+        <a href="index.html" role="link">
+            <img src="img/logo.png" alt="Logotipo del sitio Elmer's Blog" id="logo_pie">
+        </a>
+    </footer>
+
+    <!--Flecha de Anclaje - Scroll to Top-->
+    <a id="regresar" href="#principio" role="button">
+        <i class="fas fa-arrow-circle-up fa-2x"></i>
+        Volver al Inicio
+    </a>
+
+    <!--Archivos JavaScript-->
+    <script src="js/blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+/*----DISEÑO TABLETA----*/
+@media screen and (max-width: 950px){
+
+    /*----ESTILOS GENERALES----*/
+    h1{font-size: 30px;}
+    h2{font-size: 26px;}
+    h3{font-size: 22px;}
+    p{font-size: 16px;}
+
+    /*----ENCABEZADO - MENU----*/
+    header #logo_encabezado{
+        width: 240px; margin-left: 50%; 
+        transform: translateX(-50%); 
+    }
+
+    /*Ocultar Menú Diseño de Escritorio*/
+    .menu{display: none;}
+
+    /*Mostrar elementos del menú para diseño adaptable*/
+    #btn_menu, #menu2{display: block;}
+
+    /*Botón Menú*/
+    #btn_menu{
+        position: absolute; top: 50px; left: 25px;
+        background-color: transparent; color: #fff;
+        border: none; font-size: 20px; line-height: 0px;
+    }
+
+    /*Menú de Navegación - Móvil*/
+    #menu2{
+        width: 100%; height: 0px; background: #3c4155;
+        position: absolute; display: none; left: 0; top: 165px;
+    }
+    #menu2 ul{
+        list-style: none; height: 200px; width: 200px;
+        padding: 10px; text-align: center; margin: auto;
+    }
+    #menu2 ul li a{
+        text-decoration: none; color: #fff;
+        font-size: 20px; margin: 12px 0; display: block;
+    }
+
+    /*-----BANNER INTRODUCTORIO - "HERO"-----*/
+    #banner_intro{padding-top: 250px;}
+
+    /*-----CONTENEDOR PRINCIPAL-----*/
+    main{width: 85%;}
+
+    /*Menú de Anclaje - Contenidos del Blog*/
+    #contenidos{
+        margin-bottom: 20px; width: 70%;
+    }
+
+    /*Resumenes del Blog*/
+    #cont_resumen article{flex-flow: column; margin: -5px 0;}
+    #cont_resumen article img{
+        width: 70%; margin: 10px auto;
+        height: 300px; border-radius: 0;
+    }
+
+    /*-----GALERÍA DE IMAGENES-----*/
+    #slider_contenedor{
+        width: 90%; height: 100%;
+        margin: 20px auto;
+    }
+
+    /*FINAL - Fotografía y Nombre de Autor*/
+    #autor_final{display: none;}
+
+    /*-----PIE DE PÁGINA-----*/
+    footer{margin-top: -40px;}
+
+    /*-----ANCLA VOLVER AL INICIO-----*/
+    #regresar{
+        right: 10px; bottom: 10px; font-size: 14px;
+    }
+
+}/*Fin media screen 950px*/
+
+/*----DISEÑO MÓVIL----*/
+@media screen and (max-width: 450px){
+
+    /*----ESTILOS GENERALES----*/
+    h1{font-size: 28px;}
+    h3{font-size: 20px;}
+    
+    /*----ENCABEZADO - MENU----*/
+    header #logo_encabezado{
+        width: 200px; margin-left: 55%; 
+        transform: translateX(-55%); 
+    }
+
+    /*Botón Menú*/
+    #btn_menu{
+        font-size: 16px; top: 60px; left: 20px;
+    }
+
+    /*-----CONTENEDOR PRINCIPAL-----*/
+    main{width: 90%;}
+
+    /*Título del blog*/
+    .nombre_autor{font-size: 25px;}
+    #autor{width: 80px; height: 80px;}
+    .info_autor{
+        margin-left: 100px; margin-top: -100px;
+        margin-bottom: -30px;
+    }
+
+    /*Menú de Anclaje - Contenidos del Blog*/
+    #contenidos{width: 80%;}
+    #contenidos a{font-size: 16px;}
+
+    /*Resumenes del Blog*/
+    #cont_resumen article img{
+        width: 90%; margin: 10px auto; height: 220px; 
+    }
+
+    /*-----GALERÍA DE IMAGENES-----*/
+
+    /*Acomodo de contenidos dentro de la imagen del carrusel*/
+    #numero{padding: 5px 10px;}
+    #texto{width: 90%; padding: 6px 1px;}
+
+    /*-----PIE DE PÁGINA-----*/
+    footer p{
+        width: 70%; margin: 20px auto; font-size: 18px;
+    }
+    footer img{
+        height: 120px; width: 180px;
+    }
+
+    /*-----ANCLA VOLVER AL INICIO-----*/
+    #regresar{
+        right: 5px; font-size: 12px;
+    }
+
+}/*Fin media screen 450px*/
